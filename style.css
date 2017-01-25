@@ -55,7 +55,7 @@ span.book-title a {
   letter-spacing: 0;
 }
 
-nav {
+nav #sidebar {
   z-index: 0;
   background: none;
 }
