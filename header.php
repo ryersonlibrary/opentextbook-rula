@@ -69,7 +69,7 @@ if ( isset ( $fb_script['social_media'] ) && 1 === $fb_script['social_media'] ||
 		<?php else: ?>  	 
 		
 		<span itemscope itemtype="http://schema.org/WebPage" itemref="about copyrightHolder copyrightYear inLanguage publisher">		
-			<div class="nav-container">
+			<div class="top-bar">
 				<nav>
 			
 			 		<!-- Book Title -->
@@ -100,10 +100,10 @@ if ( isset ( $fb_script['social_media'] ) && 1 === $fb_script['social_media'] ||
 			     </div>			     
 				  <!-- Author Name -->   
 			    <div class="author-wrap"> 
-			    	<?php $metadata = pb_get_book_information(); ?>
-					<?php if ( ! empty( $metadata['pb_author'] ) ): ?>
-				    <h3><?php echo $metadata['pb_author']; ?></h3></span>
-		     		<?php endif; ?>
+						<?php $metadata = pb_get_book_information(); ?>
+						<?php if ( ! empty( $metadata['pb_author'] ) ) {
+							echo $metadata['pb_author'];
+						} ?>
 			     </div> <!-- end .author-name -->
 
 			  </div><!-- end sub-nav -->  

@@ -4,7 +4,7 @@ Theme URI: https://github.com/ryersonlibrary/opentextbook-rula
 Description: Ryerson Library's theme for the Open Textbooks plugin.
 Author: Ryerson Library
 Author URI: https://library.ryerson.ca
-Version: 1.0
+Version: 1.0.1
 Template: pressbooks-book
 Text Domain: open-textbook-rula
 Tags: Pressbooks Textbook
@@ -12,3 +12,45 @@ GitHub Theme URI: https://github.com/ryersonlibrary/opentextbook-rula
 */
 
 /*# sourceMappingURL=style.css.map */
+
+.top-bar {
+  margin-bottom: 40px;
+}
+
+.top-bar .title-area {
+  background: #313131;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 2px 2px #aeaeae;
+  -o-box-shadow: 2px 2px 2px #aeaeae;
+  -webkit-box-shadow: 2px 2px 2px #aeaeae;
+  box-shadow: 2px 2px 2px #aeaeae;
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  z-index: 100;
+}
+
+span.book-title {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-family: "Cardo", "Times New Roman", Times, serif;
+  /* 26px/16px */
+  margin: 0 auto;
+  padding: 10px 60px 0;
+  text-align: center;
+  width: 520px;
+}
+
+span.book-title a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.author-wrap {
+  font-weight: normal;
+  font-size: 0.75em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+  letter-spacing: 0;
+}
