@@ -59,3 +59,21 @@ nav#sidebar {
   z-index: initial;
   background: transparent;
 }
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+.skip-link:active,
+.skip-link:focus,
+.skip-link:hover { 
+  position: initial;
+  height: auto;
+  width: auto;
+  overflow: visible;
+}
