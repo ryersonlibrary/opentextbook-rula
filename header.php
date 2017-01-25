@@ -105,6 +105,14 @@
 
 			<div class="wrapper"><!-- for sitting footer at the bottom of the page -->	    
 				<div id="wrap">
+					<?php if( !is_front_page() ){?>
+					    <?php get_sidebar(); ?>
+					    <?php //get_template_part( 'tabs', 'end' ); ?>
+					    </div><!-- #wrap -->
+					    <div class="push"></div>
+					  </div><!-- .wrapper for sitting footer at the bottom of the page -->
+					<?php } ?>
+					
 					<?php //get_template_part( 'tabs', 'start'); ?>
 						<div id="content">
-	<?php endif; ?>	
+	<?php endif; ?>

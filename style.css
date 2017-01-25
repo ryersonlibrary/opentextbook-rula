@@ -54,3 +54,8 @@ span.book-title a {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   letter-spacing: 0;
 }
+
+nav {
+  z-index: 0;
+  background: none;
+}

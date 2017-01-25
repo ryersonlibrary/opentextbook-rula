@@ -1,18 +1,7 @@
 <?php if( !is_single() ){?>
-	
 	</div><!-- #content -->
 
 <?php } ?>
-<?php if( !is_front_page() ){?>
-
-	<?php get_sidebar(); ?>
-<?php //get_template_part( 'tabs', 'end' );?>
-	</div><!-- #wrap -->
-	<div class="push"></div>
-	
-	</div><!-- .wrapper for sitting footer at the bottom of the page -->
-<?php } ?>
-
 
 <div class="footer">
 	<div class="inner">
