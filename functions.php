@@ -24,14 +24,14 @@ function rula_pb_get_links( $echo = true ) {
   $next_chapter = pb_get_next();
 
   if ( $echo ) {
-  	echo '<div class="nav">'
+  	echo '<div class="nav">';
   	if ($prev_chapter != '/' ) {
-  		echo '<span class="previous"><a href="'. $prev_chapter .'">Previous page</a></span>'
+  		echo '<span class="previous"><a href="'. $prev_chapter .'">Previous page</a></span>';
   	}
   	if ($next_chapter != '/' ) {
-  		echo '<span class="next"><a href="'. $next_chapter .'">Next page</a></span>'
+  		echo '<span class="next"><a href="'. $next_chapter .'">Next page</a></span>';
   	}
-  	echo '</div>'
+  	echo '</div>';
   }
 }
 
