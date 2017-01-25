@@ -12,6 +12,30 @@ function enqueue_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 /**
+ * Render Previous and next buttons
+ *
+ * @param bool $echo
+ */
+function rula_pb_get_links( $echo = true ) {
+  global $first_chapter, $prev_chapter, $next_chapter;
+
+  $first_chapter = pb_get_first();
+  $prev_chapter = pb_get_prev();
+  $next_chapter = pb_get_next();
+
+  if ( $echo ) {
+  	echo '<div class="nav">'
+  	if ($prev_chapter != '/' ) {
+  		echo '<span class="previous"><a href="'. $prev_chapter .'">Previous page</a></span>'
+  	}
+  	if ($next_chapter != '/' ) {
+  		echo '<span class="next"><a href="'. $next_chapter .'">Next page</a></span>'
+  	}
+  	echo '</div>'
+  }
+}
+
+/**
  * Returns an html blog of meta elements 
  * 
  * @return string $html metadata

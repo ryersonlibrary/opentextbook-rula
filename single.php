@@ -18,7 +18,7 @@
         if ( $chapter_number = pb_get_chapter_number( $post->post_name ) ) echo "<span>$chapter_number</span>  ";
         the_title();
         ?></h1>
-        <?php pb_get_links(); ?>
+        
         <div id="post-<?php the_ID(); ?>" <?php post_class( pb_get_section_type( $post ) ); ?>>
 
           <div class="entry-content">
@@ -43,6 +43,7 @@
 
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
+        <?php rula_pb_get_links(); ?>
 
 
         </div><!-- #content -->
