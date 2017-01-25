@@ -53,7 +53,7 @@
 		}(document, "script", "facebook-jssdk"));</script>';
 	}?>
 	<!-- end Facebook JS -->
-
+	<a class="skip-link" href="#content">Skip to main content</a>
 	<?php get_template_part( 'content', 'accessibility-toolbar' ); ?>
 
 	<?php if ( is_front_page() ) : ?>
@@ -62,7 +62,6 @@
 			image inLanguage keywords publisher audience educationalAlignment educationalUse interactivityType learningResourceType typicalAgeRange">
 			<div class="book-info-container hfeed">
 	<?php else : ?>
-		<a class="skip-link" href="#content">Skip to main content</a>
 		<span itemscope itemtype="http://schema.org/WebPage" itemref="about copyrightHolder copyrightYear inLanguage publisher">		
 			<div class="top-bar">
 				<div class="title-area">
