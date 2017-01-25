@@ -73,11 +73,11 @@ if ( isset ( $fb_script['social_media'] ) && 1 === $fb_script['social_media'] ||
 				<nav>
 			
 			 		<!-- Book Title -->
-					<h1 class="book-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<span class="book-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			    
 					    <div class="sub-nav-left">
 							<!-- Logo -->
-							<h2 class="pressbooks-logo"><a href="<?php echo network_home_url( '/' ); ?>"><?php echo get_site_option('site_name'); ?></a></h2>
+							<span class="pressbooks-logo"><a href="<?php echo network_home_url( '/' ); ?>"><?php echo get_site_option('site_name'); ?></a></span>
 					    </div> <!-- end .sub-nav-left -->
 			    
 			    <div class="sub-nav-right">
