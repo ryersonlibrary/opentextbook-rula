@@ -1,6 +1,17 @@
 <?php
 
 /**
+ *	Include child theme stylesheets
+ */
+function enqueue_styles() {
+	// enqueue parent styles
+	wp_enqueue_style('parent-theme', get_template_directory_uri() .'/style.css');
+	// enqueue child styles
+	wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/style.css', array('parent-theme'));
+}
+add_action('wp_enqueue_scripts', 'enqueue_styles');
+
+/**
  * Returns an html blog of meta elements 
  * 
  * @return string $html metadata
