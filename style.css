@@ -56,6 +56,6 @@ span.book-title a {
 }
 
 nav#sidebar {
-  z-index: 0;
-  background: none;
+  z-index: initial;
+  background: transparent;
 }
