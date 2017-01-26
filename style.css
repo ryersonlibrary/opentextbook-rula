@@ -26,20 +26,19 @@ GitHub Theme URI: https://github.com/ryersonlibrary/opentextbook-rula
   box-shadow: 2px 2px 2px #aeaeae;
   position: relative;
   width: 100%;
-  min-height: 50px;
+  min-height: 63px;
   z-index: 100;
 }
 
 span.book-title {
   display: block;
-  font-size: 1.2em;
-  line-height: 1.6em;
+  font-size: 1.4em;
   font-family: "Cardo", "Times New Roman", Times, serif;
   /* 26px/16px */
   margin: 0 auto;
-  padding: 10px 60px 0;
   text-align: center;
   width: 520px;
+  line-height: 63px;
 }
 
 span.book-title a {
