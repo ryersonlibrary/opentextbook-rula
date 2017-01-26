@@ -77,3 +77,8 @@ nav#sidebar {
   width: auto;
   overflow: visible;
 }
+
+span.search-highlight {
+  font-weight: 700;
+  background: #ffdc00;
+}

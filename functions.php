@@ -12,6 +12,19 @@ function enqueue_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 /**
+ *	Highlight search terms
+ */
+function highlight_search_term($text){
+    if(is_search()){
+		$keys = implode('|', explode(' ', get_search_query()));
+		$text = preg_replace('/(' . $keys .')/iu', '<span class="search-highlight">\0</span>', $text);
+	}
+    return $text;
+}
+add_filter('the_excerpt', 'highlight_search_term');
+add_filter('the_title', 'highlight_search_term');
+
+/**
  * Render Previous and next buttons
  *
  * @param bool $echo
