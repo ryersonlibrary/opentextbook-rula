@@ -63,7 +63,7 @@
 			<div class="book-info-container hfeed">
 	<?php else : ?>
 		<span itemscope itemtype="http://schema.org/WebPage" itemref="about copyrightHolder copyrightYear inLanguage publisher">		
-			<div class="top-bar">
+			<div class="top-bar" role="banner">
 				<div class="title-area">
 
 					<!-- Book Title -->
